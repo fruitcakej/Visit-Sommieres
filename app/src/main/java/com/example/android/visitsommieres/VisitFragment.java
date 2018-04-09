@@ -27,7 +27,6 @@ public class VisitFragment extends Fragment{
 
     List<Items> itemsList;
     RecyclerView recyclerView;
-    ImageView googleMaps;
 
     public VisitFragment() {
         // Required empty public constructor

@@ -22,15 +22,15 @@
             android:id="@+id/imageItem"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:scaleType="fitXY" />
+            android:scaleType="centerCrop"  />
 
         <TextView
             android:id="@+id/attraction_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name"
             android:layout_below="@id/imageItem"
-            android:padding="@dimen/padding_8dp" />
+            android:padding="@dimen/padding_8dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/short_desc"

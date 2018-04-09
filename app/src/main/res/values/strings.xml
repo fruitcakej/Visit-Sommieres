@@ -13,8 +13,8 @@
     <!-- Visit Fragment-->
     <string name="visit_gps1">geo:37.7749,-122.4194</string>
     <string name="visit_nameOfAtt1">The Roman Bridge</string>
-    <string name="visit_shortDes1">The most important historic monument in Sommieres is the bridge across the river,
-                    dating from the 1st century</string>
+    <string name="visit_shortDes1">The most important historic monument in Sommières is the bridge across the river,
+                    dating from the 1st century.</string>
     <string name="visit_moreIn1">blah blah blah</string>
 
     <string name="visit_gps2">blah2</string>
@@ -44,12 +44,36 @@
 
     <!-- Eat Fragment-->
 
+    <string name="eat_gps1">blah1</string>
+    <string name="eat_nameOfAtt1">Le Pix - Bar à vin - Tapas</string>
+    <string name="eat_shortDes1">Highly rated Restaurant in Sommières with excellent service and tapas.</string>
+    <string name="eat_moreIn1">blah</string>
 
+    <string name="eat_gps2">blah2</string>
+    <string name="eat_nameOfAtt2">Lou Caleou Next</string>
+    <string name="eat_shortDes2">Michelin quality without the stars! Great food, service and ambience.</string>
+    <string name="eat_moreIn2">blah</string>
 
+    <string name="eat_gps3">blah3</string>
+    <string name="eat_nameOfAtt3">La Table Du Quai</string>
+    <string name="eat_shortDes3">The restaurant is located on the bank of the river near to the bridge.
+        Beautiful setting for a good, honest, local meal.</string>
+    <string name="eat_moreIn3">blah</string>
 
+    <string name="eat_gps4">blah4</string>
+    <string name="eat_nameOfAtt4">Les Korrigans Du Vidourle</string>
+    <string name="eat_shortDes4">Set on a balcony overlooking the main bridge, picturesque. Excellent Crêpes</string>
+    <string name="eat_moreIn4">blah</string>
 
+    <string name="eat_gps5">blah5</string>
+    <string name="eat_nameOfAtt5">Le Nulle Part Ailleurs</string>
+    <string name="eat_shortDes5">Always busy, highly welcoming restaurant in Sommières. Great wine choices.</string>
+    <string name="eat_moreIn5">blah</string>
 
-
+    <string name="eat_gps6">blah6</string>
+    <string name="eat_nameOfAtt6">Sansavino</string>
+    <string name="eat_shortDes6">Good traditional Italian food.</string>
+    <string name="eat_moreIn6">blah</string>
 
 
 </resources>
