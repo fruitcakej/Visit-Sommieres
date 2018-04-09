@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Visit Sommières</string>
+    <string name="intro_text">Sommières is a beautiful historic town with ancient origins, situated in the valley of
+        the Vidourle river half way between Montpellier and Nimes, and surrounded by the vineyards of the
+        Gard, department of Languedoc-Roussillon. Throughout its history, Sommières has remained a thriving industrial
+        city, working on textiles (a cloth formerly known as Sommières) and famous for its aromatic essences.
+    So sit back and relax while we show you around some of the best features of Sommières. We have also linked to a blog
+    below and some videos uploaded to YouTube.</string>
+    <string name="video_tour">90 second photo tour</string>
+    <string name="aerial">Aerial drone tour of Sommières</string>
+    <string name="hostel">A tour of Sommières\' hostel</string>
+
+    <!-- Visit Fragment-->
+    <string name="visit_gps1">geo:37.7749,-122.4194</string>
+    <string name="visit_nameOfAtt1">The Roman Bridge</string>
+    <string name="visit_shortDes1">The most important historic monument in Sommieres is the bridge across the river,
+                    dating from the 1st century</string>
+    <string name="visit_moreIn1">blah blah blah</string>
+
+    <string name="visit_gps2">blah2</string>
+    <string name="visit_nameOfAtt2">Chateau Villevieille</string>
+    <string name="visit_shortDes2">The town and its magnificent castle overlook the Vidourle river plain.
+        The castle tower dates back to the 10th century whereas the main part of the castle was renovated
+        in the Renaissance style at the end of the 16th century.</string>
+    <string name="visit_moreIn2">blah blah blah</string>
+
+    <string name="visit_gps3">blah3</string>
+    <string name="visit_nameOfAtt3">Jazz à Junas</string>
+    <string name="visit_shortDes3">25th edition. Faithful to its commitments Jazz in Junas goes always and
+        again to meet all audiences to give pleasure and discover jazz in all its forms.</string>
+    <string name="visit_moreIn3">blah</string>
+
+    <string name="visit_gps4">blah4</string>
+    <string name="visit_nameOfAtt4">The Green Trail</string>
+    <string name="visit_shortDes4">From Sommières to Caveirac, in the outskirts of  Nîmes, the green trail allows
+        for an outdoor excursion in pleasant and safe conditions.</string>
+    <string name="visit_moreIn4">blah</string>
+
+    <string name="visit_gps5">blah5</string>
+    <string name="visit_nameOfAtt5">Le Roc de Massereau</string>
+    <string name="visit_shortDes5">Welcome to the Roc de Massereau, the adventure park of
+        Sommières Montpellier et Nîmes.</string>
+    <string name="visit_moreIn5">blah</string>
+
+    <!-- Eat Fragment-->
+
+
+
+
+
+
+
+
+
+</resources>
