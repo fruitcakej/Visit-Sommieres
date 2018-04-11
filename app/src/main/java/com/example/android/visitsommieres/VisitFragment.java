@@ -37,7 +37,10 @@ public class VisitFragment extends Fragment implements ItemsAdapter.OnItemClickL
 
         ImageView googleMaps;
         googleMaps = getActivity().findViewById(R.id.googleMapsButton);
-        googleMaps.setOnClickListener((View.OnClickListener) getActivity());
+
+        // Works without the below line but I only want this triggered by the googlemaps imageview
+        // and not the whole cardview
+        googleMaps.setOnClickListener((View.OnClickListener) getContext());
 
         // Create a Uri from an intent string. Use the result to create an Intent.
 
