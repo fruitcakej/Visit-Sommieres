@@ -16,7 +16,7 @@ import java.util.List;
  * Created by JamieC on 09/04/2018.
  */
 
-public class HotelsFragment extends Fragment{
+public class HotelsFragment extends Fragment implements ItemsAdapter.OnItemClickListener {
 
     List<Items> itemsList;
     RecyclerView recyclerView;
@@ -24,6 +24,13 @@ public class HotelsFragment extends Fragment{
     public HotelsFragment() {
         // Required empty public constructor
     }
+
+
+    @Override
+    public void onItemClick(Items itemsList) {
+
+    }
+
 
     @Nullable
     @Override
@@ -42,7 +49,7 @@ public class HotelsFragment extends Fragment{
         itemsList.add(new Items(R.drawable.hotels_chateau_de_pondres, getString(R.string.hotels_gps2), getString(R.string.hotels_nameOfAtt2),
                 getString(R.string.hotels_shortDes2), getString(R.string.hotels_moreIn2)));
 
-        ItemsAdapter adapter = new ItemsAdapter(getActivity(), itemsList);
+        ItemsAdapter adapter = new ItemsAdapter(itemsList, this);
 
         recyclerView = recyclerView.findViewById(R.id.recyclerView);
         recyclerView.setAdapter(adapter);

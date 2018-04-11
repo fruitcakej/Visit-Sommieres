@@ -16,7 +16,7 @@ import java.util.List;
  * Created by JamieC on 09/04/2018.
  */
 
-public class EatFragment extends Fragment{
+public class EatFragment extends Fragment implements ItemsAdapter.OnItemClickListener{
 
     List<Items> itemsList;
     RecyclerView recyclerView;
@@ -24,6 +24,12 @@ public class EatFragment extends Fragment{
     public EatFragment() {
         // Required empty public constructor
     }
+
+    @Override
+    public void onItemClick(Items itemsList) {
+
+    }
+
 
     @Nullable
     @Override
@@ -50,7 +56,7 @@ public class EatFragment extends Fragment{
         itemsList.add(new Items(R.drawable.eat_sansavino, getString(R.string.eat_gps6), getString(R.string.eat_nameOfAtt6),
                 getString(R.string.eat_shortDes6), getString(R.string.eat_moreIn6)));
 
-        ItemsAdapter adapter = new ItemsAdapter(getActivity(), itemsList);
+        ItemsAdapter adapter = new ItemsAdapter(itemsList, this);
 
         recyclerView = recyclerView.findViewById(R.id.recyclerView);
         recyclerView.setAdapter(adapter);

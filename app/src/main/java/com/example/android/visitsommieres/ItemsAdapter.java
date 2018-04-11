@@ -70,7 +70,7 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> 
             short_desc.setText(itemList.getShortdesc());
             more_info.setText(itemList.getMoreInfo());
             imageItem.setImageResource(itemList.getImageResourceID());
-            
+
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {

@@ -9,20 +9,29 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import butterknife.OnItemClick;
 
 /**
  * Created by JamieC on 09/04/2018.
  */
 
-public class ShopFragment extends Fragment{
+public class ShopFragment extends Fragment implements ItemsAdapter.OnItemClickListener {
 
     List<Items> itemsList;
     RecyclerView recyclerView;
 
     public ShopFragment() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onItemClick(Items itemsList) {
+
     }
 
     @Nullable
@@ -44,7 +53,8 @@ public class ShopFragment extends Fragment{
         itemsList.add(new Items(R.drawable.shop_lanneau_dor, getString(R.string.shop_gps3), getString(R.string.shop_nameOfAtt3),
                 getString(R.string.shop_shortDes3), getString(R.string.shop_moreIn3)));
 
-        ItemsAdapter adapter = new ItemsAdapter(getActivity(), itemsList);
+
+        ItemsAdapter adapter = new ItemsAdapter(itemsList, this);
 
         recyclerView = recyclerView.findViewById(R.id.recyclerView);
         recyclerView.setAdapter(adapter);
