@@ -16,7 +16,7 @@ import java.util.List;
  * Created by JamieC on 09/04/2018.
  */
 
-public class EatFragment extends Fragment implements ItemsAdapter.OnItemClickListener{
+public class EatFragment extends Fragment implements ItemsAdapter.OnItemClickListener {
 
     List<Items> itemsList;
     RecyclerView recyclerView;

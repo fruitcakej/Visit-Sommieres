@@ -23,13 +23,18 @@ import java.util.List;
  * Created by JamieC on 03/04/2018.
  */
 
-public class VisitFragment extends Fragment{
+public class VisitFragment extends Fragment implements ItemsAdapter.OnItemClickListener {
 
     List<Items> itemsList;
     RecyclerView recyclerView;
 
     public VisitFragment() {
         // Required empty public constructor
+    }
+
+    @Override
+    public void onItemClick(Items itemsList) {
+
     }
 
     @Nullable
@@ -55,7 +60,7 @@ public class VisitFragment extends Fragment{
         itemsList.add(new Items(R.drawable.visit_roc_de_massereau, getString(R.string.visit_gps5),
                 getString(R.string.visit_nameOfAtt5),getString(R.string.visit_shortDes5), getString(R.string.visit_moreIn5)));
 
-        ItemsAdapter adapter = new ItemsAdapter(getActivity(), itemsList);
+        ItemsAdapter adapter = new ItemsAdapter(itemsList, this);
 
         recyclerView = recyclerView.findViewById(R.id.recyclerView);
         recyclerView.setAdapter(adapter);
