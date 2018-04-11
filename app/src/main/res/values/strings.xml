@@ -11,32 +11,32 @@
     <string name="hostel">A tour of Sommières\' hostel</string>
 
     <!-- Visit Fragment-->
-    <string name="visit_gps1">geo:37.7749,-122.4194</string>
+    <string name="visit_gps1">geo:43.782264, 4.088975</string>
     <string name="visit_nameOfAtt1">The Roman Bridge</string>
     <string name="visit_shortDes1">The most important historic monument in Sommières is the bridge across the river,
                     dating from the 1st century.</string>
     <string name="visit_moreIn1">blah blah blah</string>
 
-    <string name="visit_gps2">blah</string>
+    <string name="visit_gps2">geo:43.789573, 4.096265</string>
     <string name="visit_nameOfAtt2">Chateau Villevieille</string>
     <string name="visit_shortDes2">The town and its magnificent castle overlook the Vidourle river plain.
         The castle tower dates back to the 10th century whereas the main part of the castle was renovated
         in the Renaissance style at the end of the 16th century.</string>
     <string name="visit_moreIn2">blah blah blah</string>
 
-    <string name="visit_gps3">blah3</string>
+    <string name="visit_gps3">geo:43.770567, 4.122169</string>
     <string name="visit_nameOfAtt3">Jazz à Junas</string>
     <string name="visit_shortDes3">25th edition. Faithful to its commitments Jazz in Junas goes always and
         again to meet all audiences to give pleasure and discover jazz in all its forms.</string>
     <string name="visit_moreIn3">blah</string>
 
-    <string name="visit_gps4">blah4</string>
+    <string name="visit_gps4">geo:43.782405, 4.091706</string>
     <string name="visit_nameOfAtt4">The Green Trail</string>
     <string name="visit_shortDes4">From Sommières to Caveirac, in the outskirts of  Nîmes, the green trail allows
         for an outdoor excursion in pleasant and safe conditions.</string>
     <string name="visit_moreIn4">blah</string>
 
-    <string name="visit_gps5">blah5</string>
+    <string name="visit_gps5">geo:43.763131, 4.094486</string>
     <string name="visit_nameOfAtt5">Le Roc de Massereau</string>
     <string name="visit_shortDes5">Welcome to the Roc de Massereau, the adventure park of
         Sommières Montpellier et Nîmes.</string>
@@ -44,51 +44,51 @@
 
     <!-- Eat Fragment-->
 
-    <string name="eat_gps1">blah1</string>
+    <string name="eat_gps1">geo:43.783139, 4.090041</string>
     <string name="eat_nameOfAtt1">Le Pix - Bar à vin - Tapas</string>
     <string name="eat_shortDes1">Highly rated Restaurant in Sommières with excellent service and tapas.</string>
     <string name="eat_moreIn1">blah</string>
 
-    <string name="eat_gps2">blah2</string>
+    <string name="eat_gps2">geo:43.781735, 4.087712</string>
     <string name="eat_nameOfAtt2">Lou Caleou Next</string>
     <string name="eat_shortDes2">Michelin quality without the stars! Great food, service and ambience.</string>
     <string name="eat_moreIn2">blah</string>
 
-    <string name="eat_gps3">blah3</string>
+    <string name="eat_gps3">geo:43.781628, 4.090514</string>
     <string name="eat_nameOfAtt3">La Table Du Quai</string>
     <string name="eat_shortDes3">The restaurant is located on the bank of the river near to the bridge.
         Beautiful setting for a good, honest, local meal.</string>
     <string name="eat_moreIn3">blah</string>
 
-    <string name="eat_gps4">blah4</string>
+    <string name="eat_gps4">geo:43.782157, 4.088377</string>
     <string name="eat_nameOfAtt4">Les Korrigans Du Vidourle</string>
     <string name="eat_shortDes4">Set on a balcony overlooking the main bridge, picturesque. Excellent Crêpes</string>
     <string name="eat_moreIn4">blah</string>
 
-    <string name="eat_gps5">blah5</string>
+    <string name="eat_gps5">geo:43.783304, 4.090243</string>
     <string name="eat_nameOfAtt5">Le Nulle Part Ailleurs</string>
     <string name="eat_shortDes5">Always busy, highly welcoming restaurant in Sommières. Great wine choices.</string>
     <string name="eat_moreIn5">blah</string>
 
-    <string name="eat_gps6">blah6</string>
+    <string name="eat_gps6">geo:43.783030, 4.089841</string>
     <string name="eat_nameOfAtt6">Sansavino</string>
     <string name="eat_shortDes6">Good traditional Italian food.</string>
     <string name="eat_moreIn6">blah</string>
 
     <!-- Shop Fragment-->
 
-    <string name="shop_gps1">blah1</string>
+    <string name="shop_gps1">geo:43.782866, 4.089696</string>
     <string name="shop_nameOfAtt1">Sommières Saturday market</string>
     <string name="shop_shortDes1">For centuries the town of Sommières has attracted visitors to its traditional
         Saturday market. All year long merchants set up their colourful stands along the streets and in the town square.</string>
     <string name="shop_moreIn1">blah</string>
 
-    <string name="shop_gps2">blah2</string>
+    <string name="shop_gps2">geo:43.784893, 4.089978</string>
     <string name="shop_nameOfAtt2">Chocolaterie Courtin</string>
     <string name="shop_shortDes2">A beautiful local chocolate shop in the heart of Sommières.</string>
     <string name="shop_moreIn2">blah</string>
 
-    <string name="shop_gps3">blah3</string>
+    <string name="shop_gps3">geo:43.783296, 4.090339</string>
     <string name="shop_nameOfAtt3">La boutique l\'Anneau d'Or</string>
     <string name="shop_shortDes3">L\'Anneau d\'Or welcomes you in a warm and intimate setting. the latest trends
         in French jewelery creation.</string>
@@ -96,13 +96,13 @@
 
     <!-- Hotels Fragment-->
 
-    <string name="hotels_gps1">blah1</string>
+    <string name="hotels_gps1">geo:43.777786, 4.093081</string>
     <string name="hotels_nameOfAtt1">Hotel Estelou</string>
     <string name="hotels_shortDes1">The Estelou hotel has been converted from the old railway
         station in Sommières.</string>
     <string name="hotels_moreIn1">blah</string>
 
-    <string name="hotels_gps2">blah1</string>
+    <string name="hotels_gps2">geo:43.807698, 4.090297</string>
     <string name="hotels_nameOfAtt2">Chateau de Pondres</string>
     <string name="hotels_shortDes2">Dating back to immemorial times, the Château de Pondres has existed since 1195.
         It’s complete restoration, carried out under the aegis of Historical Monuments, has recently been completed.</string>
