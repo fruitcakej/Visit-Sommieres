@@ -35,6 +35,20 @@ public class VisitFragment extends Fragment implements ItemsAdapter.OnItemClickL
     @Override
     public void onItemClick(Items itemsList) {
 
+        ImageView googleMaps;
+        googleMaps = getActivity().findViewById(R.id.googleMapsButton);
+        googleMaps.setOnClickListener((View.OnClickListener) getActivity());
+
+        // Create a Uri from an intent string. Use the result to create an Intent.
+
+        Uri sendToMap = Uri.parse(itemsList.getgMapsLocation());
+        Intent intent = new Intent(Intent.ACTION_VIEW, sendToMap);
+        // Make the Intent explicit by setting the Google Maps package
+        intent.setPackage("com.google.android.apps.maps");
+
+        if (intent.resolveActivity(getContext().getPackageManager()) != null) {
+            getContext().startActivity(intent);
+        }
     }
 
     @Nullable
