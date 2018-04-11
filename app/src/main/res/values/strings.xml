@@ -75,5 +75,44 @@
     <string name="eat_shortDes6">Good traditional Italian food.</string>
     <string name="eat_moreIn6">blah</string>
 
+    <!-- Shop Fragment-->
+
+    <string name="shop_gps1">blah1</string>
+    <string name="shop_nameOfAtt1">Sommières Saturday market</string>
+    <string name="shop_shortDes1">For centuries the town of Sommières has attracted visitors to its traditional
+        Saturday market. All year long merchants set up their colourful stands along the streets and in the town square.</string>
+    <string name="shop_moreIn1">blah</string>
+
+    <string name="shop_gps2">blah2</string>
+    <string name="shop_nameOfAtt2">Chocolaterie Courtin</string>
+    <string name="shop_shortDes2">A beautiful local chocolate shop in the heart of Sommières.</string>
+    <string name="shop_moreIn2">blah</string>
+
+    <string name="shop_gps3">blah3</string>
+    <string name="shop_nameOfAtt3">La boutique l'Anneau d'Or</string>
+    <string name="shop_shortDes3">L\'Anneau d\'Or welcomes you in a warm and intimate setting. the latest trends
+        in French jewelery creation.</string>
+    <string name="shop_moreIn3">blah</string>
+
+    <!-- Hotels Fragment-->
+
+    <string name="hotels_gps1">blah1</string>
+    <string name="hotels_nameOfAtt1">Hotel Estelou</string>
+    <string name="hotels_shortDes1">The Estelou hotel has been converted from the old railway
+        station in Sommières.</string>
+    <string name="hotels_moreIn1">blah</string>
+
+    <string name="hotels_gps2">blah1</string>
+    <string name="hotels_nameOfAtt2">Chateau de Pondres</string>
+    <string name="hotels_shortDes2">Dating back to immemorial times, the Château de Pondres has existed since 1195.
+        It’s complete restoration, carried out under the aegis of Historical Monuments, has recently been completed.</string>
+    <string name="hotels_moreIn2">blah</string>
+
+
+
+
+
+
+
 
 </resources>

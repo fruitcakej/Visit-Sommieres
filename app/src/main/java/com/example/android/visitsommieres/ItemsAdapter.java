@@ -19,30 +19,30 @@ import java.util.List;
  * Created by JamieC on 02/04/2018.
  */
 
-public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ProductViewHolder> {
+public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> {
 
-    //this context we will use to inflate the layout
-    private Context context;
-
-    //we are storing all the products in a list
-    private List<Items> itemsList;
-
-    //Holder for geo location
-    private String toMaps;
-
-    //getting the context and product list with constructor
-    public ItemsAdapter(Context context, List<Items> itemsList) {
-        this.context = context;
-        this.itemsList = itemsList;
+    public interface OnItemClickListener {
+        void onItemClick(Items itemsList);
     }
 
-    @NonNull
+    private final List<Items> itemsList;
+    private final OnItemClickListener listener;
+
+    public ItemsAdapter(List<Items> itemsList, OnItemClickListener listener) {
+        this.itemsList = itemsList;
+        this.listener = listener;
+    }
+
     @Override
-    public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        //inflating and returning view holder
-        LayoutInflater layoutInflater = LayoutInflater.from(context);
-        View view = layoutInflater.inflate(R.layout.layout_items, parent, false);
-        return new ProductViewHolder(view);
+    @NonNull
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_items, parent, false);
+        return new ViewHolder(v);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.bind(itemsList.get(position), listener);
     }
 
     @Override
@@ -50,14 +50,12 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ProductViewH
         return itemsList.size();
     }
 
+    static class ViewHolder extends RecyclerView.ViewHolder {
 
-    public class ProductViewHolder extends RecyclerView.ViewHolder {
+        private TextView attraction_name, short_desc, more_info;
+        private ImageView imageItem, googleMaps;
 
-        ImageView imageItem, googleMaps;
-        TextView attraction_name, short_desc, more_info;
-
-
-        public ProductViewHolder(final View itemView) {
+        public ViewHolder(View itemView) {
             super(itemView);
 
             imageItem = itemView.findViewById(R.id.imageItem);
@@ -65,53 +63,20 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ProductViewH
             short_desc = itemView.findViewById(R.id.short_desc);
             more_info = itemView.findViewById(R.id.more_info);
             googleMaps = itemView.findViewById(R.id.googleMapsButton);
+        }
 
-            googleMaps.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+        public void bind(final Items itemList, final OnItemClickListener listener) {
+            attraction_name.setText(itemList.getNameOfAttraction());
+            short_desc.setText(itemList.getShortdesc());
+            more_info.setText(itemList.getMoreInfo());
+            imageItem.setImageResource(itemList.getImageResourceID());
+            
 
-                // Create a Uri from an intent string. Use the result to create an Intent.
-
-
-
-                    Uri sendToMap = Uri.parse(toMaps);
-                    Intent intent = new Intent(Intent.ACTION_VIEW, sendToMap);
-                    // Make the Intent explicit by setting the Google Maps package
-                    intent.setPackage("com.google.android.apps.maps");
-
-                    if (intent.getPackage() != null) {
-                        itemView.getContext().startActivity(intent);
-                    }
-
-
-
-
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override public void onClick(View v) {
+                    listener.onItemClick(itemList);
                 }
             });
-
-
-
-
         }
     }
-
-
-
-    @Override
-    public void onBindViewHolder(@NonNull ProductViewHolder holder, int position) {
-
-        //getting the product of the specified position
-        Items items = itemsList.get(position);
-
-        toMaps = items.getgMapsLocation();
-        Log.d("value", toMaps);
-
-        //binding the data with the viewholder views
-        holder.imageItem.setImageResource(items.getImageResourceID());
-        holder.attraction_name.setText(items.getNameOfAttraction());
-        holder.short_desc.setText(items.getShortdesc());
-        holder.more_info.setText(items.getMoreInfo());
-
-    }
-
 }

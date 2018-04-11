@@ -37,14 +37,10 @@ public class HotelsFragment extends Fragment{
         recyclerView.setBackgroundResource(0);
 
         itemsList = new ArrayList<>();
-
-
-
-
-
-
-
-
+        itemsList.add(new Items(R.drawable.hotels_estelou, getString(R.string.hotels_gps1), getString(R.string.hotels_nameOfAtt1),
+                getString(R.string.hotels_shortDes1), getString(R.string.hotels_moreIn1)));
+        itemsList.add(new Items(R.drawable.hotels_chateau_de_pondres, getString(R.string.hotels_gps2), getString(R.string.hotels_nameOfAtt2),
+                getString(R.string.hotels_shortDes2), getString(R.string.hotels_moreIn2)));
 
         ItemsAdapter adapter = new ItemsAdapter(getActivity(), itemsList);
 
