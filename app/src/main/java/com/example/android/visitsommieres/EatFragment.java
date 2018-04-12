@@ -1,5 +1,7 @@
 package com.example.android.visitsommieres;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by JamieC on 09/04/2018.
+ * Created by JamieC on 11/04/2018.
  */
 
 public class EatFragment extends Fragment implements ItemsAdapter.OnItemClickListener {
@@ -26,8 +28,27 @@ public class EatFragment extends Fragment implements ItemsAdapter.OnItemClickLis
     }
 
     @Override
-    public void onItemClick(Items itemsList) {
+    public void onMoreInfoClick(Items itemsList) {
 
+        String more_info;
+        more_info = itemsList.getMoreInfo();
+        Intent intent = new Intent(getContext(), PopUpWindow.class);
+        intent.putExtra("data", more_info);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onMapItemClick(Items itemsList) {
+
+        // Create a Uri from an intent string. Use the result to create an Intent.
+        Uri sendToMap = Uri.parse(itemsList.getgMapsLocation());
+        Intent intent = new Intent(Intent.ACTION_VIEW, sendToMap);
+        // Make the Intent explicit by setting the Google Maps package
+        intent.setPackage("com.google.android.apps.maps");
+
+        if (intent.resolveActivity(getContext().getPackageManager()) != null) {
+            getContext().startActivity(intent);
+        }
     }
 
 

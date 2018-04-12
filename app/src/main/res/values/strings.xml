@@ -1,79 +1,114 @@
 <resources>
     <string name="app_name">Visit Sommières</string>
-    <string name="intro_text">Sommières is a beautiful historic town with ancient origins, situated in the valley of
-        the Vidourle river half way between Montpellier and Nimes, and surrounded by the vineyards of the
-        Gard, department of Languedoc-Roussillon. Throughout its history, Sommières has remained a thriving industrial
-        city, working on textiles (a cloth formerly known as Sommières) and famous for its aromatic essences.
-    So sit back and relax while we show you around some of the best features of Sommières. We have also linked to a blog
-    below and some videos uploaded to YouTube.</string>
+    <string name="intro_text">Sommières is a beautiful historic town in the south of France with ancient origins,
+        situated in the valley of the Vidourle river half way between Montpellier and Nimes, and surrounded
+        by the vineyards of the Gard, department of Languedoc-Roussillon. Throughout its history,
+        Sommières has remained a thriving industrial city, working on textiles (a cloth formerly known as Sommières)
+        and famous for its aromatic essences. So sit back and relax while we show you around some of
+        the best features of Sommières. We have also linked to a blog below and some videos uploaded to YouTube.</string>
     <string name="video_tour">90 second photo tour</string>
     <string name="aerial">Aerial drone tour of Sommières</string>
     <string name="hostel">A tour of Sommières\' hostel</string>
+    <string name="more_info">More Info</string>
 
     <!-- Visit Fragment-->
+
     <string name="visit_gps1">geo:43.782264, 4.088975</string>
     <string name="visit_nameOfAtt1">The Roman Bridge</string>
     <string name="visit_shortDes1">The most important historic monument in Sommières is the bridge across the river,
                     dating from the 1st century.</string>
-    <string name="visit_moreIn1">blah blah blah</string>
+    <string name="visit_moreIn1">The bridge has been rebuilt and repaired many times during the last 2000 years,
+        so much of what we can see today dates from later periods. The bridge is the best place to start your visit,
+        since it also represents the origins of the town which developed on and around the bridge starting from the 10th
+        century although there are no longer any buildings on the bridge itself. Bridges that were built on are quite rare
+        but can be found in several places in Europe. The most famous is the Ponte Vecchio in Florence.\n\nDue to its
+        important historic monuments, Sommieres historic centre is now officially designated as a \'secteur sauvegardé\'.
+       This means, it is protected from further development to ensure it retains its medieval character.</string>
 
     <string name="visit_gps2">geo:43.789573, 4.096265</string>
     <string name="visit_nameOfAtt2">Chateau Villevieille</string>
     <string name="visit_shortDes2">The town and its magnificent castle overlook the Vidourle river plain.
         The castle tower dates back to the 10th century whereas the main part of the castle was renovated
         in the Renaissance style at the end of the 16th century.</string>
-    <string name="visit_moreIn2">blah blah blah</string>
+    <string name="visit_moreIn2">After 1913, only occupied by guards, the castle deteriorates and undergoes German
+        occupation during the Second World War. In 1960, Count and Countess Jean de David Beauregard returned to
+        live at the castle, began restoration and received the prize for Masterpieces in Danger in 1968.
+        \n\nDo not miss out on this heritage and come take part in the guided tours organized at the castle.
+        During a one hour visit, your steps will take you from the old kitchen to the amazing dining room
+        and its leather of Cordoba.\n\nOpen from the 1st July to 30th September. </string>
 
     <string name="visit_gps3">geo:43.770567, 4.122169</string>
     <string name="visit_nameOfAtt3">Jazz à Junas</string>
     <string name="visit_shortDes3">25th edition. Faithful to its commitments Jazz in Junas goes always and
         again to meet all audiences to give pleasure and discover jazz in all its forms.</string>
-    <string name="visit_moreIn3">blah</string>
+    <string name="visit_moreIn3">In July, in the exceptional setting of the Junas,
+        the Junas Jazz Festival offers music lovers great outdoor concerts. Since its creation in July 1994,
+        the Gard festival continues its desire to open to other jazz cultures and welcomes around French artists,
+        musicians from all over Europe (Norway, Hungary, Balkans) or the United States (New York, Louisiana, Chicago).
+        The Jazz association in Junas also organizes festivals: Jazz au Vigan which takes place during two days of April
+        in the Cévennes, Jazz in Pic Saint Loup in June and Jazz in Vauvert at the beginning of July.\n\n
+        From the 17th to the 21st July 2018.
+</string>
 
     <string name="visit_gps4">geo:43.782405, 4.091706</string>
     <string name="visit_nameOfAtt4">The Green Trail</string>
     <string name="visit_shortDes4">From Sommières to Caveirac, in the outskirts of  Nîmes, the green trail allows
         for an outdoor excursion in pleasant and safe conditions.</string>
-    <string name="visit_moreIn4">blah</string>
+    <string name="visit_moreIn4">It lies on the route of the former railroad and goes through countryside and
+        villages in the Sommières and Vaunage area. Designed for non-motorised vehicles such as bicycles,
+        roller skates, baby carriages and wheelchairs, walkers will enjoy it also. It is connected to several marked
+        hiking trails.\n\nBicycles can be rented in Calvisson.</string>
 
     <string name="visit_gps5">geo:43.763131, 4.094486</string>
     <string name="visit_nameOfAtt5">Le Roc de Massereau</string>
     <string name="visit_shortDes5">Welcome to the Roc de Massereau, the adventure park of
         Sommières Montpellier et Nîmes.</string>
-    <string name="visit_moreIn5">blah</string>
+    <string name="visit_moreIn5">Tree climbing, giant zip lines and more than 160 activities. progressive
+        and playful, to satisfy beginners and most sporty, in a forest with remarkable trees.
+        Discover the SUP (Stand-Up Paddle) on the river, ideal for relaxation with friends or family.
+        A natural environment in a \“Natura 2000 zone”.\n\nTake time to discover the aquatic environment,
+        fishes, dragonflies, rare birds and even the beaver if you are lucky! Standing on the water
+        in a relaxed setting, respecting the fauna and the flora, enjoy a natural environment preserved.
+        \n\nCheck opening times as they vary throughout the year.</string>
 
     <!-- Eat Fragment-->
 
     <string name="eat_gps1">geo:43.783139, 4.090041</string>
     <string name="eat_nameOfAtt1">Le Pix - Bar à vin - Tapas</string>
     <string name="eat_shortDes1">Highly rated Restaurant in Sommières with excellent service and tapas.</string>
-    <string name="eat_moreIn1">blah</string>
+    <string name="eat_moreIn1">6 rue Paulin Capmal.\n\nSpanish, Wine Bar, Vegetarian Friendly, Vegan Options
+        \n\n+33 4 66 77 74 64</string>
 
     <string name="eat_gps2">geo:43.781735, 4.087712</string>
     <string name="eat_nameOfAtt2">Lou Caleou Next</string>
     <string name="eat_shortDes2">Michelin quality without the stars! Great food, service and ambience.</string>
-    <string name="eat_moreIn2">blah</string>
+    <string name="eat_moreIn2">21 Place de la Liberation.\n\nFrench, Mediterranean, Gastropub
+        \n\n+33 4 66 53 16 05</string>
 
     <string name="eat_gps3">geo:43.781628, 4.090514</string>
     <string name="eat_nameOfAtt3">La Table Du Quai</string>
     <string name="eat_shortDes3">The restaurant is located on the bank of the river near to the bridge.
         Beautiful setting for a good, honest, local meal.</string>
-    <string name="eat_moreIn3">blah</string>
+    <string name="eat_moreIn3">19 B quai Cleon Griolet.\n\nFrench, Mediterranean, European
+        \n\n+33 4 66 88 62 38</string>
 
     <string name="eat_gps4">geo:43.782157, 4.088377</string>
     <string name="eat_nameOfAtt4">Les Korrigans Du Vidourle</string>
     <string name="eat_shortDes4">Set on a balcony overlooking the main bridge, picturesque. Excellent Crêpes</string>
-    <string name="eat_moreIn4">blah</string>
+    <string name="eat_moreIn4">2 Faubourg du Pont.\n\nFrench, European, Vegetarian Friendly
+        \n\n+33 4 66 51 61 74</string>
 
     <string name="eat_gps5">geo:43.783304, 4.090243</string>
     <string name="eat_nameOfAtt5">Le Nulle Part Ailleurs</string>
     <string name="eat_shortDes5">Always busy, highly welcoming restaurant in Sommières. Great wine choices.</string>
-    <string name="eat_moreIn5">blah</string>
+    <string name="eat_moreIn5">11 rue Paulin Capmal.\n\nFrench, Mediterranean, European, Tapas
+        \n\n+33 4 66 80 00 34</string>
 
     <string name="eat_gps6">geo:43.783030, 4.089841</string>
     <string name="eat_nameOfAtt6">Sansavino</string>
     <string name="eat_shortDes6">Good traditional Italian food.</string>
-    <string name="eat_moreIn6">blah</string>
+    <string name="eat_moreIn6">9 Place des Docteurs.\n\nItalian, Mediterranean, Vegetarian Friendly
+        \n\n+33 4 66 80 09 85</string>
 
     <!-- Shop Fragment-->
 
@@ -81,12 +116,19 @@
     <string name="shop_nameOfAtt1">Sommières Saturday market</string>
     <string name="shop_shortDes1">For centuries the town of Sommières has attracted visitors to its traditional
         Saturday market. All year long merchants set up their colourful stands along the streets and in the town square.</string>
-    <string name="shop_moreIn1">blah</string>
+    <string name="shop_moreIn1">Opened from 8am to 1pm this market is quite wide and it goes from the edge of the old town
+        to the river. It is the best in the area of Vaunage due to the variety of products it offers, its size and its
+        medieval atmosphere. This market sprawls throughout the old city but the heart is definitely located in the place
+        of the Docteur Dax.\n\nThe market that has been held here for the last 800 years, and if you are visiting
+        during the summer we also suggest you visit the market on a Wednesday evening for a outdoor market with many
+        local products to enjoy and a festive communal atmosphere.</string>
 
     <string name="shop_gps2">geo:43.784893, 4.089978</string>
     <string name="shop_nameOfAtt2">Chocolaterie Courtin</string>
     <string name="shop_shortDes2">A beautiful local chocolate shop in the heart of Sommières.</string>
-    <string name="shop_moreIn2">blah</string>
+    <string name="shop_moreIn2">8, place de la République.\n\n04.66.35.32.04\n\nAll our chocolates are guaranteed
+        100% CACAO PURE, without addition of preservatives or chemicals. In addition, some ingredients used are
+        regional products (almonds, honey).</string>
 
     <string name="shop_gps3">geo:43.783296, 4.090339</string>
     <string name="shop_nameOfAtt3">La boutique l\'Anneau d'Or</string>
@@ -100,19 +142,12 @@
     <string name="hotels_nameOfAtt1">Hotel Estelou</string>
     <string name="hotels_shortDes1">The Estelou hotel has been converted from the old railway
         station in Sommières.</string>
-    <string name="hotels_moreIn1">blah</string>
+    <string name="hotels_moreIn1">Hotel Estelou\n\nRoute d Aubais, 30250 Sommieres, France\n\n3 Star\n\n04 66 53 11 04</string>
 
     <string name="hotels_gps2">geo:43.807698, 4.090297</string>
     <string name="hotels_nameOfAtt2">Chateau de Pondres</string>
     <string name="hotels_shortDes2">Dating back to immemorial times, the Château de Pondres has existed since 1195.
         It’s complete restoration, carried out under the aegis of Historical Monuments, has recently been completed.</string>
-    <string name="hotels_moreIn2">blah</string>
-
-
-
-
-
-
-
+    <string name="hotels_moreIn2">Chateau de Pondres\n\n2 allee du Pigeonnier, 30250 Villevieille, France\n\n4 Star</string>
 
 </resources>

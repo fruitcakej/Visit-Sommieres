@@ -16,13 +16,16 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by JamieC on 11/04/2018.
+ * Recycler tutorial from: https://antonioleiva.com/recyclerview-listener/
+ * Custom listeners for separate views and not whole cardviews
+ * 11/04/2018.
  */
 
 public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> {
 
     public interface OnItemClickListener {
-        void onItemClick(Items itemsList);
+        void onMapItemClick(Items itemsList);
+        void onMoreInfoClick (Items itemsList);
     }
 
     private final List<Items> itemsList;
@@ -61,20 +64,26 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> 
             imageItem = itemView.findViewById(R.id.imageItem);
             attraction_name = itemView.findViewById(R.id.attraction_name);
             short_desc = itemView.findViewById(R.id.short_desc);
-            more_info = itemView.findViewById(R.id.more_info);
+            more_info = itemView.findViewById(R.id.more_info_button);
             googleMaps = itemView.findViewById(R.id.googleMapsButton);
         }
 
         public void bind(final Items itemList, final OnItemClickListener listener) {
             attraction_name.setText(itemList.getNameOfAttraction());
             short_desc.setText(itemList.getShortdesc());
-            more_info.setText(itemList.getMoreInfo());
             imageItem.setImageResource(itemList.getImageResourceID());
 
+            googleMaps.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.onMapItemClick(itemList);
+                }
+            });
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override public void onClick(View v) {
-                    listener.onItemClick(itemList);
+            more_info.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.onMoreInfoClick(itemList);
                 }
             });
         }

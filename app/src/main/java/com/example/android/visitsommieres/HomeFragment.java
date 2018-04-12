@@ -15,8 +15,6 @@ import android.widget.ImageView;
  * Created by JamieC on 29/03/2018.
  */
 
-/* Implement butterknife at code clean-up stage */
-
 public class HomeFragment extends Fragment{
 
  private ImageView blogIV, videoIV;

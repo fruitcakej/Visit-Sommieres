@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,8 +10,6 @@
     card_view:cardBackgroundColor="@android:color/white"
     card_view:cardCornerRadius="8dp"
     android:layout_margin="@dimen/padding_8dp" >
-
-    <!--Maybe linearlayout would be better here -->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -47,15 +44,12 @@
             android:background="@android:color/darker_gray"
             android:layout_below="@id/short_desc" />
 
-        <!-- Change to id 'more_info_btn' for pop-up?-->
-        <!-- id 'more_info' to be on popup activity-->
-        <!-- Text field should then change to More Info-->
         <TextView
-            android:id="@+id/more_info"
+            android:id="@+id/more_info_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/view1"
-            android:text="More Info"
+            android:text="@string/more_info"
             android:padding="@dimen/padding_8dp"
             android:paddingBottom="@dimen/padding_8dp"
             android:drawableRight="@drawable/ic_arrow_right"
@@ -66,7 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@android:color/darker_gray"
-            android:layout_below="@id/more_info" />
+            android:layout_below="@id/more_info_button" />
 
         <ImageView
             android:id="@+id/googleMapsButton"
@@ -76,7 +70,6 @@
             android:layout_centerHorizontal="true"
             android:paddingTop="@dimen/padding_8dp"
             android:src="@drawable/ic_maps" />
-
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>

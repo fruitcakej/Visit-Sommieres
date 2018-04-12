@@ -10,8 +10,6 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
 
-/* Implement butterknife at code clean-up stage */
-
 public class VideoActivity extends AppCompatActivity implements View.OnClickListener {
 
     WebView webView;

@@ -38,7 +38,6 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
         return tabTitles[position];
     }
 
-
     @Override
     public int getCount() {
         return 5;

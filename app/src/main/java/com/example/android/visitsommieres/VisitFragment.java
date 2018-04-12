@@ -15,12 +15,13 @@ import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by JamieC on 03/04/2018.
+ * Created by JamieC on 11/04/2018.
  */
 
 public class VisitFragment extends Fragment implements ItemsAdapter.OnItemClickListener {
@@ -33,17 +34,19 @@ public class VisitFragment extends Fragment implements ItemsAdapter.OnItemClickL
     }
 
     @Override
-    public void onItemClick(Items itemsList) {
+    public void onMoreInfoClick(Items itemsList) {
 
-        ImageView googleMaps;
-        googleMaps = getActivity().findViewById(R.id.googleMapsButton);
+        String more_info;
+        more_info = itemsList.getMoreInfo();
+        Intent intent = new Intent(getContext(), PopUpWindow.class);
+        intent.putExtra("data", more_info);
+        startActivity(intent);
+    }
 
-        // Works without the below line but I only want this triggered by the googlemaps imageview
-        // and not the whole cardview
-        googleMaps.setOnClickListener((View.OnClickListener) getContext());
+    @Override
+    public void onMapItemClick(Items itemsList) {
 
         // Create a Uri from an intent string. Use the result to create an Intent.
-
         Uri sendToMap = Uri.parse(itemsList.getgMapsLocation());
         Intent intent = new Intent(Intent.ACTION_VIEW, sendToMap);
         // Make the Intent explicit by setting the Google Maps package
@@ -68,14 +71,14 @@ public class VisitFragment extends Fragment implements ItemsAdapter.OnItemClickL
         itemsList = new ArrayList<>();
         itemsList.add(new Items(R.drawable.visit_rb, getString(R.string.visit_gps1), getString(R.string.visit_nameOfAtt1),
                 getString(R.string.visit_shortDes1), getString(R.string.visit_moreIn1)));
-        itemsList.add(new Items(R.drawable.visit_chateau_de_villevieille,  getString(R.string.visit_gps2),
-                getString(R.string.visit_nameOfAtt2),getString(R.string.visit_shortDes2), getString(R.string.visit_moreIn2)));
-        itemsList.add(new Items(R.drawable.visit_jazz_a_junas,  getString(R.string.visit_gps3),
-                getString(R.string.visit_nameOfAtt3),getString(R.string.visit_shortDes3), getString(R.string.visit_moreIn3)));
+        itemsList.add(new Items(R.drawable.visit_chateau_de_villevieille, getString(R.string.visit_gps2),
+                getString(R.string.visit_nameOfAtt2), getString(R.string.visit_shortDes2), getString(R.string.visit_moreIn2)));
+        itemsList.add(new Items(R.drawable.visit_jazz_a_junas, getString(R.string.visit_gps3),
+                getString(R.string.visit_nameOfAtt3), getString(R.string.visit_shortDes3), getString(R.string.visit_moreIn3)));
         itemsList.add(new Items(R.drawable.visit_green_trail, getString(R.string.visit_gps4),
-                getString(R.string.visit_nameOfAtt4),getString(R.string.visit_shortDes4), getString(R.string.visit_moreIn4)));
+                getString(R.string.visit_nameOfAtt4), getString(R.string.visit_shortDes4), getString(R.string.visit_moreIn4)));
         itemsList.add(new Items(R.drawable.visit_roc_de_massereau, getString(R.string.visit_gps5),
-                getString(R.string.visit_nameOfAtt5),getString(R.string.visit_shortDes5), getString(R.string.visit_moreIn5)));
+                getString(R.string.visit_nameOfAtt5), getString(R.string.visit_shortDes5), getString(R.string.visit_moreIn5)));
 
         ItemsAdapter adapter = new ItemsAdapter(itemsList, this);
 
@@ -83,6 +86,5 @@ public class VisitFragment extends Fragment implements ItemsAdapter.OnItemClickL
         recyclerView.setAdapter(adapter);
 
         return recyclerView;
-
     }
 }

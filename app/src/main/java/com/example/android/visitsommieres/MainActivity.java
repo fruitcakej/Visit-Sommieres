@@ -8,9 +8,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.ImageView;
 
-
-/* Implement butterknife at code clean-up stage */
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -31,5 +28,4 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
     }
-
 }
