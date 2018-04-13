@@ -46,19 +46,19 @@ public class VideoActivity extends AppCompatActivity implements View.OnClickList
         switch (view.getId()) {
             case R.id.video_tour:
                 webView.setVisibility(View.VISIBLE);
-                url="https://www.youtube.com/embed/GHCBGTGBEO8?rel=0";
+                url=(getString(R.string.vid1));
                 webView.loadUrl(url);
                 videoInfo.setText(R.string.video_tour);
                 break;
             case R.id.aerial_view:
                 webView.setVisibility(View.VISIBLE);
-                url="https://www.youtube.com/embed/05zdmZ9Cg3w?rel=0";
+                url=(getString(R.string.vid2));
                 webView.loadUrl(url);
                 videoInfo.setText(R.string.aerial);
                 break;
             case R.id.local_hostel:
                 webView.setVisibility(View.VISIBLE);
-                url="https://www.youtube.com/embed/NOzMGqIQ-x0?rel=0";
+                url=(getString(R.string.vid3));
                 webView.loadUrl(url);
                 videoInfo.setText(R.string.hostel);
                 break;

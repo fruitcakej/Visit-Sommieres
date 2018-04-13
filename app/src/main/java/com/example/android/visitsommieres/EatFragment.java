@@ -33,7 +33,7 @@ public class EatFragment extends Fragment implements ItemsAdapter.OnItemClickLis
         String more_info;
         more_info = itemsList.getMoreInfo();
         Intent intent = new Intent(getContext(), PopUpWindow.class);
-        intent.putExtra("data", more_info);
+        intent.putExtra(getString(R.string.intent_data), more_info);
         startActivity(intent);
     }
 
@@ -44,7 +44,7 @@ public class EatFragment extends Fragment implements ItemsAdapter.OnItemClickLis
         Uri sendToMap = Uri.parse(itemsList.getgMapsLocation());
         Intent intent = new Intent(Intent.ACTION_VIEW, sendToMap);
         // Make the Intent explicit by setting the Google Maps package
-        intent.setPackage("com.google.android.apps.maps");
+        intent.setPackage(getString(R.string.set_package));
 
         if (intent.resolveActivity(getContext().getPackageManager()) != null) {
             getContext().startActivity(intent);

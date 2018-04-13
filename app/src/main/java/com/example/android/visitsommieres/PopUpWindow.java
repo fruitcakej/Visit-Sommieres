@@ -35,7 +35,7 @@ public class PopUpWindow extends Activity {
 
         if(bundle !=null)
         {
-            String mInfo = (String) bundle.get("data");
+            String mInfo = (String) bundle.get(getString(R.string.intent_data));
             more_info.setText(mInfo);
         }
     }

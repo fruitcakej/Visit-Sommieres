@@ -39,7 +39,7 @@ public class HomeFragment extends Fragment{
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://www.huffingtonpost.co.uk/stuart-forster/southern-france-travel_b_8269152.html")));
+                        Uri.parse(getString(R.string.blog_link))));
             }
         });
 

@@ -10,6 +10,17 @@
     <string name="aerial">Aerial drone tour of Sommières</string>
     <string name="hostel">A tour of Sommières\' hostel</string>
     <string name="more_info">More Info</string>
+    <string name="blog_link">https://www.huffingtonpost.co.uk/stuart-forster/southern-france-travel_b_8269152.html</string>
+    <string name="tab1">Home</string>
+    <string name="tab2">Visit</string>
+    <string name="tab3">Eat</string>
+    <string name="tab4">Shop</string>
+    <string name="tab5">Hotels</string>
+    <string name="vid1">https://www.youtube.com/embed/GHCBGTGBEO8?rel=0</string>
+    <string name="vid2">https://www.youtube.com/embed/05zdmZ9Cg3w?rel=0</string>
+    <string name="vid3">https://www.youtube.com/embed/NOzMGqIQ-x0?rel=0</string>
+    <string name="set_package">com.google.android.apps.maps</string>
+    <string name="intent_data">data</string>
 
     <!-- Visit Fragment-->
 

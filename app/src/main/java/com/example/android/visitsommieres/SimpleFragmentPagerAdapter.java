@@ -4,17 +4,18 @@ package com.example.android.visitsommieres;
  * Created by JamieC on 29/03/2018.
  */
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.widget.ImageView;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private String tabTitles[] = new String[] { "Home", "Visit", "Eat", "Shop", "Hotels" };
+    Context mContext;
 
-    public SimpleFragmentPagerAdapter(FragmentManager fm) {
+    public SimpleFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
+        mContext = context;
     }
 
     @Override
@@ -34,8 +35,20 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        // Generate title based on item position
-        return tabTitles[position];
+        switch (position) {
+            case 0:
+                return mContext.getString(R.string.tab1);
+            case 1:
+                return mContext.getString(R.string.tab2);
+            case 2:
+                return mContext.getString(R.string.tab3);
+            case 3:
+                return mContext.getString(R.string.tab4);
+            case 4:
+                return mContext.getString(R.string.tab5);
+            default:
+                return null;
+        }
     }
 
     @Override
